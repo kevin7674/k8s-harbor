@@ -37,6 +37,8 @@ $ cd harbor-1.4.0
 因為 `*pv.yaml` 會用到本機的 Volume ，所以先幫忙建立資料夾
 ```sh
 $ sudo mkdir -p /data/storage
+$ sudo mkdir -p /data/registry
+$ sudo mkdir -p /data/logs
 ```
 
 #### 4. 產生 `ConfigMap files`
