@@ -287,13 +287,12 @@ latest: digest: sha256:85659faba67a762e1669668a4ac30f4359e094a223a791354ffe51e23
 That's all.
 
 註：其實 docker 前面不用加 sudo，只不過這次的安裝比較趕，所以沒有重新在我的本機 logout 就直接使用，要不然是要在安裝完 docker 後，下 `sudo usermod -aG docker <username>` 的指令，然後 logout。再重新 login。就可以在你目前的 username 直接使用 docker 的指令。至於 `sudo usermod -aG docker <username>` 的意思是，修改 username 這個使用者，將 username 加到 docker 這個 group (-g) 中。
-
-
-
-
-
-
-
+   
+   
+   
+```
 kubectl label node opstagin210 machieType=registry
+
       nodeSelector:
         release: production
+```
